@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class Player {
     public int jumpPower;
-	// Use this for initialization
-	
+    public int score;
+    public int Radius { get; set; }
+                                       // Use this for initialization
+
 }
