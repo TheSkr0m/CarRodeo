@@ -26,7 +26,7 @@ public class TapPanel : MonoBehaviour, IDragHandler, IPointerDownHandler, IPoint
             case GameManager.PlayerState.isWaiting:
                 break;
             case GameManager.PlayerState.onCar:
-               // charController.MoveCar();
+                charController.MoveCar(eventData.delta);
                 break;
             case GameManager.PlayerState.inAir:
                 break;
@@ -67,7 +67,7 @@ public class TapPanel : MonoBehaviour, IDragHandler, IPointerDownHandler, IPoint
 
                 break;
             case GameManager.PlayerState.inAir:
-                //charController.GetCar();
+                charController.GetCar();
 
                 break;
             default:
