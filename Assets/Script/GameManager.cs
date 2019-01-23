@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour {
         inAir
     }
 
+    public Player player;
     public PlayerState playerState;
 
     void Start()
