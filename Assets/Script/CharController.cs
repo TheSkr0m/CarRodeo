@@ -52,7 +52,7 @@ public class CharController : MonoBehaviour
     public void MoveCar(Vector2 pos)
     {
         Debug.Log(pos);
-        car.transform.position = new Vector3(pos.x, car.transform.position.y, car.transform.position.z);
+        car.transform.position = new Vector3(car.transform.position.x + pos.x * Time.deltaTime, car.transform.position.y, car.transform.position.z);
     }
 
     private void OnCollisionEnter(Collision collision)
