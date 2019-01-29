@@ -13,6 +13,7 @@ public class GameOverPanel
     public void SetActive(bool value)
     {
         panel.SetActive(value);
+
         if (value)
         {
             score.text = gameManager.player.score.ToString();
